@@ -1,0 +1,46 @@
+@import "./../styles/variables.scss";
+
+.container {
+  // height: calc(100vh - #{$headerHeight});
+
+  main {
+    float: left;
+    width: 100%;
+    margin-top: 100vh;
+    overflow: hidden;
+
+  }
+
+
+  &__innerContainer {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 2vh;
+
+    @include breakpoint(md) {
+      width: 620px;
+    }
+
+    @include breakpoint(lg) {
+      width: 800px;
+    }
+    @include breakpoint(xl) {
+      width: 1000px;
+    }
+    @include breakpoint(xxl) {
+      width: 1050px;
+    }
+
+    &.paddingDefault{
+      padding: $section-padding 2vh;
+
+      @include breakpoint(md) {
+        padding: $section-padding-md 2vh;
+      }
+  
+      @include breakpoint(lg) {
+        padding: $section-padding-lg 2vh;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import './../styles/variables.scss';
+
+.note{
+    background: $primary;
+    color: $light;
+    text-align: center;
+    padding: 90px 0;
+    font-size: 24px;
+    line-height: 120%;
+    width: 100%;
+    float: left;
+
+    @include breakpoint(lg){
+        font-size: 30px;
+    }
+
+    p{
+        margin-bottom: 3rem;
+    }
+
+    button{
+        background:$light;
+        color: $dark;
+        font-size: 16px;
+        line-height: 120%;
+        padding: 12px 30px;
+        border: transparent;
+        font-family: $work-sans;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        cursor: pointer;
+
+        &:hover{
+            background:$primary;
+            outline:  1px solid $light;
+
+          
+        }
+        &:active{
+            .icon{
+                transform: translate(70%);
+            }
+        }
+
+        .icon{
+            margin-left: 2rem;
+            font-size: 30px;
+            transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+            
+        }
+
+
+
+    }
+}

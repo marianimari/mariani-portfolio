@@ -1,0 +1,37 @@
+@import './../styles/variables.scss';
+.social{
+    background: $light;
+    z-index: 50;
+    position: fixed;
+    width: $headerHeight;
+    height: 100%;
+    padding: 0 1rem;
+    font-size: 1rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease all;
+    transform: translateX(-100%);
+    @include breakpoint(md) {
+      padding: 0 1rem;
+      transform: translateX(0%);
+    }
+    a{
+        color: $dark;
+    }
+
+    &__icon{
+        margin: 0.5rem auto;
+        transition: 0.3s ease all;
+        cursor: pointer;
+
+        &:hover{
+            color: $primary;
+        }
+
+    }
+  
+
+
+}

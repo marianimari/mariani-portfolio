@@ -1,0 +1,114 @@
+@import "./../styles/variables.scss";
+
+.welcome {
+  // position: relative;
+  overflow: hidden;
+
+  &__intro {
+    position: absolute;
+    z-index: 2;
+    top: 29vh;
+    width: 71%;
+    left: 7vh;
+
+
+    @include breakpoint(md) {
+      left: 15vh;
+      top: 35vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 55%;
+      margin: 0 auto;
+      justify-content: space-around;
+    }
+    @include breakpoint(xl) {
+      left: 22vh;
+      top: 35vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 1000px;
+    }
+
+    &__subtitle {
+      p {
+        margin: 0 0 2rem 3.5rem;
+        color: $primary;
+        font-size: 24px;
+        &::before {
+          display: block;
+          position: absolute;
+          top: 0.7rem;
+          left: 0.4rem;
+          width: 2rem;
+          height: 1px;
+          background-color: #000;
+          content: "";
+        }
+      }
+      h1 {
+        font-family: $gilroy;
+        line-height: 89%;
+        letter-spacing: -1%;
+        text-transform: uppercase;
+        color: $dark;
+
+        &.textPc {
+          font-size: 100px;
+          display: none;
+          @include breakpoint(xl) {
+            display: block;
+          }
+        }
+        &.textSm {
+          font-size: 76px;
+          display: block;
+          @include breakpoint(xl) {
+            display: none;
+          }
+        }
+      }
+    }
+    &__line {
+      width: 1px;
+      height: 48px;
+      border-right: 1px solid #ffffff;
+      margin: 1.5rem 0.2rem;
+      border-bottom: transparent;
+
+      @include breakpoint(xl) {
+        width: 180px;
+        /* height: 1px; */
+        border-right: transparent;
+        border-bottom: 1px solid $light;
+        margin: 0rem 2.5rem;
+        margin-top: -1rem;
+      }
+    }
+
+    &__text {
+      color: $light;
+      font-size: 18px;
+      line-height: 1.5em;
+    }
+  }
+
+  &__square {
+    background: $primary;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+    height: 50vh;
+    width: 100%;
+    transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+
+    @include breakpoint(xl) {
+      height: calc(100vh - #{$headerHeight});
+      top: 0;
+      right: 0;
+      width: 68%;
+    }
+  }
+}

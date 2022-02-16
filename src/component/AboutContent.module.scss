@@ -1,0 +1,123 @@
+@import "./../styles/variables.scss";
+
+.aboutContent {
+  a {
+    color: $primary;
+  }
+
+  &__wraper {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(lg) {
+      flex-direction: row;
+    }
+
+    &__text {
+      position: relative;
+      font-weight: 400;
+      font-size: 16px;
+      width: 100%;
+      &::before {
+        display: block;
+        position: absolute;
+        top: -22px;
+        left: 0;
+        width: 3rem;
+        height: 1px;
+        background-color: #000;
+        content: "";
+      }
+      p {
+        margin-bottom: 1rem;
+        line-height: 1.5em;
+        text-align: justify;
+      }
+
+      @include breakpoint(lg) {
+        width: 55%;
+        font-size: 16px;
+      }
+    }
+
+    &__skill {
+      font-weight: 400;
+      width: 100%;
+      margin-top: 1rem;
+
+      @include breakpoint(lg) {
+        width: 30%;
+        margin-top: 0;
+      }
+      h3 {
+        font-size: 30px;
+      }
+
+      &__list {
+        display: flex;
+
+        ul {
+          width: 100%;
+          width: 50%;
+          list-style: none;
+          padding: 0;
+          margin-top: 1rem;
+          @include breakpoint(lg) {
+            width: 50%;
+            margin-top: 2rem;
+          }
+
+          li {
+            color: $grey-text;
+            font-size: 16px;
+            line-height: 2rem;
+          }
+        }
+      }
+    }
+  
+  }
+  button {
+    background: $light;
+    color: $dark;
+    font-size: 16px;
+    line-height: 120%;
+    padding: 12px 30px;
+    border: transparent;
+    font-family: $work-sans;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 0;
+    transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+    outline: 1px solid $dark;
+    
+    // position: absolute;
+    // top: 85vh;
+    // left: 0;
+
+    @include breakpoint(lg) {
+      right: 0;
+    }
+
+    &:hover {
+      background: $primary;
+      outline: 1px solid $light;
+      color: $light;
+    }
+    &:active {
+      .icon {
+        transform: translateY(30%);
+      }
+    }
+
+    .icon {
+      margin-left: 2rem;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}

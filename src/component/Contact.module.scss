@@ -1,0 +1,105 @@
+@import "./../styles/variables.scss";
+
+.contact {
+  background: $light;
+  text-align: left;
+  padding: 20px 0;
+
+  width: 100%;
+  float: left;
+
+  @include breakpoint(lg) {
+    padding: 50px 0;
+  }
+
+  &__title {
+    border-bottom: 1px solid $dark;
+    width: 100%;
+
+    margin-bottom: 1rem;
+    @include breakpoint(lg) {
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 2.5em;
+      @include breakpoint(lg) {
+        font-size: 40px;
+      }
+    }
+  }
+  &__email {
+    border-bottom: 1px solid $dark;
+    margin-bottom: 2rem;
+    span {
+      font-weight: 200;
+    }
+    p {
+      font-size: 24px;
+      font-weight: normal;
+      margin-top: 12px;
+      margin-bottom: 1rem;
+      @include breakpoint(lg) {
+        font-size: 50px;
+        line-height: 1em;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  footer {
+    flex-direction: column-reverse;
+    display: flex;
+
+    @include breakpoint(lg) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    p.copyright {
+      font-size: 12px;
+      @include breakpoint(lg) {
+        font-size: 14px;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+
+      margin-bottom: 2rem;
+
+      padding: 0;
+      margin-left: -1rem;
+
+      @include breakpoint(lg) {
+        order: 2;
+      }
+      li {
+        font-size: 14px;
+        padding: 0 1rem;
+
+        @include breakpoint(lg) {
+          font-size: 16px;
+          &:last-child, &:last-child a {
+            padding-right: 0;
+          }
+        }
+        // &:first-child {
+        //   padding-left: 0;
+        // }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+          padding: 0.75rem 0rem;
+          transition: 0.3s ease all;
+
+          &:hover {
+            color: rgba($primary, 0.9);
+          }
+        }
+      }
+    }
+  }
+}

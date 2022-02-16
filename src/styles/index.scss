@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: $work-sans;
+  color: $dark;
+  background: $bg;
+  -webkit-font-smoothing: antialiased;
+}
+#root {
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+  transition: .2s ease-out;
+  color: inherit;
+}
