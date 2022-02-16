@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/mariani-portfolio/static/css/main.06ca6678.css",
+    "main.js": "/mariani-portfolio/static/js/main.4ce1308c.js",
+    "static/media/Gilroy-Extrabold.eot": "/mariani-portfolio/static/media/Gilroy-Extrabold.35fe3e3eaadedba86260.eot",
+    "static/media/Gilroy-Extrabold.ttf": "/mariani-portfolio/static/media/Gilroy-Extrabold.92e435f7fae6070d73bb.ttf",
+    "static/media/Gilroy-Extrabold.woff": "/mariani-portfolio/static/media/Gilroy-Extrabold.f39ff81c45c126012265.woff",
+    "static/media/Gilroy-Extrabold.woff2": "/mariani-portfolio/static/media/Gilroy-Extrabold.5c5942d3e4d9a9645df4.woff2",
+    "index.html": "/mariani-portfolio/index.html",
+    "main.06ca6678.css.map": "/mariani-portfolio/static/css/main.06ca6678.css.map",
+    "main.4ce1308c.js.map": "/mariani-portfolio/static/js/main.4ce1308c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06ca6678.css",
+    "static/js/main.4ce1308c.js"
+  ]
+}
