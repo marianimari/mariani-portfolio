@@ -10,6 +10,7 @@ function App() {
       <Layout>
         <Routes>
           {/* <Route path="/" element={<Navigate to="/welcome" />} /> */}
+          <Route path="/" exact component={<Home />}/>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
         
