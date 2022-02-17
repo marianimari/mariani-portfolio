@@ -16,9 +16,7 @@ const AboutIntro = () => {
             <h1>About me.</h1>
           </div>
 
-          <img className={classes.workItem__container__image} src={imageSrc} />
-        
-    
+          <img className={classes.workItem__container__image} src={imageSrc} alt="my image" /> 
         </div>
       </div>
     </aboutIntro>

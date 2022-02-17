@@ -3,6 +3,9 @@
 .welcome {
   // position: relative;
   overflow: hidden;
+  &.animate1{
+display: block;
+  }
 
   &__intro {
     position: absolute;
