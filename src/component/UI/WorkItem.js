@@ -6,7 +6,7 @@ const WorkItem = () => {
   return (
     <workItem className={classes.workItem}>
       <div className={classes.workItem__container}>
-        <img className={classes.workItem__container__image} src={imageSrc}  alt="dummy image"/>
+        <img className={classes.workItem__container__image} src={imageSrc}  alt="dummy"/>
         <div className={classes.workItem__container__text}>
           <h3>Selected projects</h3>
           <span>Elearning / Java web</span>
@@ -14,7 +14,7 @@ const WorkItem = () => {
       </div>
 
       <div className={classes.workItem__container}>
-        <img className={classes.workItem__container__image} src={imageSrc} alt="dummy image"/>
+        <img className={classes.workItem__container__image} src={imageSrc} alt="dummy"/>
         <div className={classes.workItem__container__text}>
           <h3>Selected projects</h3>
           <span>Elearning / Java web</span>
@@ -22,7 +22,7 @@ const WorkItem = () => {
       </div>
 
       <div className={classes.workItem__container}>
-        <img className={classes.workItem__container__image} src={imageSrc}  alt="dummy image"/>
+        <img className={classes.workItem__container__image} src={imageSrc}  alt="dummy"/>
         <div className={classes.workItem__container__text}>
           <h3>Selected projects</h3>
           <span>Elearning / Java web</span>

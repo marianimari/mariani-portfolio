@@ -9,7 +9,6 @@ const Welcome = () => {
   const title2 = useRef();
 
 useEffect(() => {
-  console.log(title.current);
   //timeline
   const tl = gsap.timeline();
   const tl2 = gsap.timeline();
@@ -17,24 +16,19 @@ useEffect(() => {
   tl.from(
     title.current, 1.8, {
       opacity:0,
-      y: 100,
+      y: 120,
       ease: 'power4.out',
       delay: 1,
-      skewY:7,
-      stagger:{
-        amount: 0.3,
-      }
 
     }
   );
 
   tl2.from(
-    title2.current, 1, {
+    title2.current, 0.6, {
       opacity:0,
-      x: 2000,
-      ease: 'power5.out',
-      delay: 0,
-      skewX:7,
+      y: 1500,
+      ease: 'power6.out',
+
     }
   );
 
@@ -65,7 +59,7 @@ useEffect(() => {
         </div>
       </div>
 
-      <div className={`${classes.welcome__square} ${classes.animate1}`} ref={title2}></div>
+      <div className={classes.welcome__square} ref={title2}></div>
     </welcome>
   );
 };
