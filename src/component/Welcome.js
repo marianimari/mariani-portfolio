@@ -37,9 +37,9 @@ useEffect(() => {
 }, []);
 
   return (
-    <welcome className={classes.welcome}>
+    <welcome className={classes.welcome} id="welcome" >
       <div className={classes.welcome__intro} >
-        <div className={classes.welcome__intro__subtitle} ref={title}>
+        <div className={classes.welcome__intro__subtitle} ref={title} >
           <p>Hi, I’m Mariani</p>
           <h1 className={classes.textSm}>
             Front  <br /> End <br /> Dev.

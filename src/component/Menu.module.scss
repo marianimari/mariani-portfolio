@@ -34,9 +34,19 @@
     opacity: 1;
     transform: matrix(0, -1, 1, 0, 0, 0);
 
+    &__active{
+      color: $dark!important;
+
+      &:after {
+        width: 100%;
+      }
+    }
+
     ul {
       padding: 0;
+      width: max-content;
       li {
+        cursor: pointer;
         display: inline;
         position: relative;
         height: 1.1rem;
@@ -56,8 +66,49 @@
           padding: 0.3rem;
           color: #9b9b9b;
           text-transform: lowercase;
-          will-change: color;
           transition: color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+          position: relative;
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            bottom: 0;
+            height: 2px;
+            margin: 2px 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            transition: all 0.4s ease-in 0s;
+          }
+          &:hover:after {
+            width: 100%;
+            color: $dark;
+          }
+          &:hover{
+            color: $dark;
+          }
+        }
+
+        // Animation 3
+        // Underline - Left to Right
+        &.effect-three > a {
+          display: inline-block;
+          position: relative;
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            bottom: 0;
+            height: 2px;
+            margin: -5px 0;
+            left: 0;
+            background-color: white;
+            transition: all 0.4s ease-in 0s;
+          }
+          &:hover:after {
+            width: 100%;
+          }
         }
       }
     }

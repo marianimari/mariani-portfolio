@@ -1,33 +1,27 @@
 import React from "react";
 import classes from "./WorkItem.module.scss";
-import imageSrc from './../../image/image-test.png';
+import { work } from "./../../data/workData";
+
+
 
 const WorkItem = () => {
+
+
   return (
     <workItem className={classes.workItem}>
-      <div className={classes.workItem__container}>
-        <img className={classes.workItem__container__image} src={imageSrc}  alt="dummy"/>
-        <div className={classes.workItem__container__text}>
-          <h3>Selected projects</h3>
-          <span>Elearning / Java web</span>
+      {work.map((work) => (
+        <div className={classes.workItem__container}>
+          <img
+            className={classes.workItem__container__image}
+            src={require("./../../image/" + work.image)}
+            alt="dummy"
+          />
+          <div className={classes.workItem__container__text}>
+            <h3>{work.title}</h3>
+            <span>{work.category}</span>
+          </div>
         </div>
-      </div>
-
-      <div className={classes.workItem__container}>
-        <img className={classes.workItem__container__image} src={imageSrc} alt="dummy"/>
-        <div className={classes.workItem__container__text}>
-          <h3>Selected projects</h3>
-          <span>Elearning / Java web</span>
-        </div>
-      </div>
-
-      <div className={classes.workItem__container}>
-        <img className={classes.workItem__container__image} src={imageSrc}  alt="dummy"/>
-        <div className={classes.workItem__container__text}>
-          <h3>Selected projects</h3>
-          <span>Elearning / Java web</span>
-        </div>
-      </div>
+      ))}
     </workItem>
   );
 };

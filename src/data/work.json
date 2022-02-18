@@ -1,0 +1,34 @@
+{
+  "work": [
+    {
+      "id": 1,
+      "title": "Crafting Website",
+      "category": "JAVA Web / E-commerse",
+      "slug": "creafting-web",
+      "description": "This is gonna be a long text",
+      "stack": "HTML/CSS, Java, JSF, Primefaces, Javascript",
+      "link": "Apr 02, 2017",
+      "source": ""
+    },
+    {
+      "id": 2,
+      "title": "NihonVogue Web",
+      "category": "Wordpress / E-Learning",
+      "slug": "creafting-web",
+      "description": "This is gonna be a long text",
+      "stack": "HTML/CSS, Wordpress, Page builder",
+      "link": "Apr 02, 2017",
+      "source": ""
+    },
+    {
+      "id": 3,
+      "title": "Apr 02, 2017",
+      "category": "Web Development / E-Learning",
+      "slug": "creafting-web",
+      "description": "This is gonna be a long text",
+      "stack": "HTML/CSS, Java, JSF, Primefaces",
+      "link": "Apr 02, 2017",
+      "source": ""
+    }
+  ]
+}

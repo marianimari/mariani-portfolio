@@ -6,10 +6,10 @@ import ExperimentItem from "./UI/ExperimentItem";
 
 const Experiment = () => {
   return (
-    <experiment className={classes.experiment}>
+    <experiment className={classes.experiment}   id="experiment">
       <div
         className={`${classContainer.container__innerContainer} ${classContainer.paddingDefault}`}
-      >
+    >
         <SectionIntro
           number="02"
           title="Experiments."

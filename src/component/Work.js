@@ -6,8 +6,8 @@ import WorkItem from "./UI/WorkItem";
 
 const Work = () => {
   return (
-    <work className={classes.work}>
-      <div className={`${classContainer.container__innerContainer} ${classContainer.paddingDefault}`}>
+    <work className={classes.work} >
+      <div className={`${classContainer.container__innerContainer} ${classContainer.paddingDefault}`} id="work">
         <SectionIntro
         number="01"
         title="Works."
@@ -15,7 +15,6 @@ const Work = () => {
         smallNote=""
         text="Selected projects, a collection of various websites that I have worked on while working at the previous company."
         />
-
         <WorkItem/>
 
       </div>

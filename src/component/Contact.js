@@ -4,7 +4,7 @@ import classContainer from "./Layout.module.scss";
 
 const Contact = () => {
   return (
-    <contact className={classes.contact}>
+    <contact className={classes.contact} id="contact">
       <div className={classContainer.container__innerContainer}>
         <div className={classes.contact__title}>
           <h1>Let’s work together </h1>
