@@ -46,9 +46,6 @@ const Header = () => {
           //    className="classes.header__content__nav isMenu"
         >
           <ul>
-            {/* <li>
-              <Link to="/welcome">Home</Link> 
-            </li> */}
             <li>
               <Link to="/about">about</Link>
             </li>

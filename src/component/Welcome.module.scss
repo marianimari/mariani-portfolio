@@ -10,9 +10,9 @@ display: block;
   &__intro {
     position: absolute;
     z-index: 2;
-    top: 29vh;
+    top: 20vh;
     width: 71%;
-    left: 7vh;
+    left: 40px;
 
 
     @include breakpoint(md) {

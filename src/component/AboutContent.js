@@ -24,13 +24,13 @@ const AboutContent = () => {
               </a>{" "}
               as a front-end web developer for about 4 years.
             </p>
-            <p>
+            {/* <p>
               Her expertise is in the area of responsive design, striving to
               make the web beautiful, functional, and fast. Always enthusiast in
               helping designers to translate the design into interactive &
               intuitive user interfaces with the objective to enhance user
               experience.
-            </p>
+            </p> */}
             <p>
               Right now, she is enthusiastic about doing web projects using
               modern javascript framework/library (especially ReactJs) and web
