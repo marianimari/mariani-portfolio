@@ -1,18 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.6bdfaf96.css",
-    "main.js": "/static/js/main.94900c2d.js",
+    "main.css": "/static/css/main.75d05543.css",
+    "main.js": "/static/js/main.5fe645e2.js",
     "static/media/Mariani-Resume.pdf": "/static/media/Mariani-Resume.5036400cc2e00530e964.pdf",
     "static/media/Gilroy-Extrabold.eot": "/static/media/Gilroy-Extrabold.35fe3e3eaadedba86260.eot",
     "static/media/Gilroy-Extrabold.ttf": "/static/media/Gilroy-Extrabold.92e435f7fae6070d73bb.ttf",
+    "static/media/panda.jpg": "/static/media/panda.c1c80f110122f37f194a.jpg",
+    "static/media/nihonvogue.jpg": "/static/media/nihonvogue.c5035e390eaa4aa17ed3.jpg",
+    "static/media/makart.jpg": "/static/media/makart.81250a7e0f623e23c29e.jpg",
+    "static/media/fukui.jpg": "/static/media/fukui.a08fbcbd440dbb43b26f.jpg",
+    "static/media/crafting.jpg": "/static/media/crafting.d30360b4c3b9708aef6d.jpg",
+    "static/media/jhia.jpg": "/static/media/jhia.478aa4b3cbe958b67ab2.jpg",
     "static/media/Gilroy-Extrabold.woff": "/static/media/Gilroy-Extrabold.f39ff81c45c126012265.woff",
     "static/media/Gilroy-Extrabold.woff2": "/static/media/Gilroy-Extrabold.5c5942d3e4d9a9645df4.woff2",
     "index.html": "/index.html",
-    "main.6bdfaf96.css.map": "/static/css/main.6bdfaf96.css.map",
-    "main.94900c2d.js.map": "/static/js/main.94900c2d.js.map"
+    "main.75d05543.css.map": "/static/css/main.75d05543.css.map",
+    "main.5fe645e2.js.map": "/static/js/main.5fe645e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bdfaf96.css",
-    "static/js/main.94900c2d.js"
+    "static/css/main.75d05543.css",
+    "static/js/main.5fe645e2.js"
   ]
 }
