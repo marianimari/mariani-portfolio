@@ -64,8 +64,8 @@ const WorkDetail = (props) => {
             <div  className={classes.workDetail__container__top__img}>
               <img
                 className={classes.workItem__container__image}
-              
-                  src={require('./../../image/' + work.image)}
+                src={require("./../../image/" + work.image)}
+                  // src={require('./../../image/' + work.image).default}
 
                 alt={work.title}
               />
