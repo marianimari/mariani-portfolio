@@ -1,0 +1,84 @@
+@import "./../../styles/variables.scss";
+
+.workDetail {
+  a {
+    text-decoration: underline;
+  }
+  h1 {
+    font-size: 38px;
+    margin-bottom: 2rem;
+  }
+  &__container__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+    @include breakpoint(lg) {
+        flex-direction: row;
+      }
+
+    &__left {
+      width: 100%;
+      margin-top: 3rem;
+      @include breakpoint(lg) {
+        width: 35%;
+      }
+    }
+
+    &__category {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    span {
+      color: #858585;
+      font-size: 16px;
+      font-weight: 500;
+      display: block;
+      margin-top: 12px;
+      line-height: 1.5em;
+    }
+    p {
+      line-height: 1.5em;
+    }
+    &__img {
+      width: 100%;
+      @include breakpoint(lg) {
+        width: 60%;
+      }
+      img {
+        width: 100%;
+        max-width: 900px;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+  &__container__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem 0;
+    @include breakpoint(lg) {
+        flex-direction: row;
+      }
+
+    h4 {
+      font-size: 24px;
+      width: 100%;
+      margin-bottom: 1rem;
+      @include breakpoint(lg) {
+        width: 35%;
+      }
+    }
+    p {
+      width: 100%;
+      font-size: 18px;
+      line-height: 1.5em;
+
+      @include breakpoint(lg) {
+        width: 60%;
+      }
+    }
+  }
+ 
+}

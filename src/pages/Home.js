@@ -4,8 +4,10 @@ import Note from "../component/Note";
 import Contact from "../component/Contact";
 import Work from "../component/Work";
 import Experiment from "../component/Experiment";
+import Menu from "../component/Menu";
 
 const Home = () => {
+
   return (
     <>
       <Welcome />
@@ -15,6 +17,7 @@ const Home = () => {
         <Note />
         <Contact />
       </main>
+      <Menu /> 
     </>
   );
 };

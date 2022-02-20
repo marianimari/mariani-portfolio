@@ -37,8 +37,9 @@
     &__active{
       color: $dark!important;
 
-      &:after {
+      &:hover:after {
         width: 100%;
+        color: $dark;
       }
     }
 
