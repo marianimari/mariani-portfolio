@@ -6,10 +6,10 @@ import classContainer from "./Layout.module.scss";
 
 const AboutIntro = () => {
   return (
-    <aboutIntro className={classes.aboutIntro}>
+    <aboutIntro className={classes.aboutIntro} >
       <div
         className={classContainer.container__innerContainer}
-      >
+        id="about" >
         <div className={classes.aboutIntro__wraper}>
           <div className={classes.aboutIntro__text}>
             <p>Get to know more</p>

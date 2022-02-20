@@ -3,6 +3,7 @@
 .menu {
   background: $light;
   position: fixed;
+  align-items: center;
   z-index: 10;
   width: $headerHeight;
   height: 100vh;
@@ -34,10 +35,10 @@
     opacity: 1;
     transform: matrix(0, -1, 1, 0, 0, 0);
 
-    &__active{
+    .active{
       color: $dark!important;
 
-      &:hover:after {
+      &:after {
         width: 100%;
         color: $dark;
       }
@@ -57,9 +58,9 @@
         -ms-transform: rotate(180deg);
         transform: rotate(180deg);
 
-        &:first-child {
-          margin-left: -22vh;
-        }
+        // &:first-child {
+        //   margin-left: -22vh;
+        // }
 
         a {
           text-decoration: none;
@@ -90,27 +91,7 @@
           }
         }
 
-        // Animation 3
-        // Underline - Left to Right
-        &.effect-three > a {
-          display: inline-block;
-          position: relative;
-          &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            width: 0;
-            bottom: 0;
-            height: 2px;
-            margin: -5px 0;
-            left: 0;
-            background-color: white;
-            transition: all 0.4s ease-in 0s;
-          }
-          &:hover:after {
-            width: 100%;
-          }
-        }
+        
       }
     }
   }

@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./AboutContent.module.scss";
 import classContainer from "./Layout.module.scss";
-import { BsDownload } from "react-icons/bs";
+import { BsFileEarmarkText } from "react-icons/bs";
 import Pdf from '../files/Mariani-Resume.pdf';
 
 const AboutContent = () => {
@@ -68,7 +68,7 @@ const AboutContent = () => {
         >
           <button>
             See my resume
-            <BsDownload className={classes.icon} />
+            <BsFileEarmarkText className={classes.icon} />
           </button>
         </a>
       </div>

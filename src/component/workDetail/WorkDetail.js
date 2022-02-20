@@ -3,6 +3,7 @@ import classes from "./WorkDetail.module.scss";
 import { workData } from "./../../data/workData";
 import { useParams } from "react-router-dom";
 import classContainer from "./../Layout.module.scss";
+import MenuWork from "../MenuWork";
 
 const WorkDetail = (props) => {
   const { slug } = useParams();
@@ -29,7 +30,6 @@ const WorkDetail = (props) => {
     setWork(work);
   }, [work, slug]);
 
-  const imgSource = "./../../image/" +work.image;
 
   return (
     <>
@@ -62,13 +62,12 @@ const WorkDetail = (props) => {
             </div>
 
             <div  className={classes.workDetail__container__top__img}>
-              <img
+            <img
                 className={classes.workItem__container__image}
-                src={require("./../../image/" + work.image)}
-                  // src={require('./../../image/' + work.image).default}
-
+               src={"https://raw.githubusercontent.com/marianimari/mariani-portfolio/master/src/image/"+work.image}
+            
                 alt={work.title}
-              />
+              ></img>
             </div>
           </div>
 
@@ -81,7 +80,9 @@ const WorkDetail = (props) => {
             <p className="description">{work.role}</p>
           </div>
         </div>
+     
       </workDetail>
+      <MenuWork /> 
     </>
   );
 };

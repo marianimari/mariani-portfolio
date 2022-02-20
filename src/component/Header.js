@@ -6,7 +6,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const menuToggleHandler = () => {
     setMenuOpen((p) => !p);
@@ -40,25 +40,27 @@ const Header = () => {
         <h2 className={classes.header__content__logo}>Mariani <span> Portfolio</span></h2>
         </Link>
         <nav
-          className={`${classes.header__content__nav} ${
-            menuOpen && size.width<768 ? classes.isMenu : ""
-          }`}
+          className={classes.header__content__nav} 
+          // {`${classes.header__content__nav} 
+          // ${
+          //   menuOpen && size.width<768 ? classes.isMenu : ""
+          // }`}
           //    className="classes.header__content__nav isMenu"
         >
           <ul>
             <li>
-              <Link to="/about">about</Link>
+              <Link to="/about/#about">about</Link>
             </li>
           </ul>
          
         </nav>
-        <div className={classes.header__content__toggle}>
+        {/* <div className={classes.header__content__toggle}>
           {!menuOpen ? (
             <BiMenuAltRight onClick={menuToggleHandler} />
           ) : (
             <AiOutlineClose onClick={menuToggleHandler} />
           )}
-        </div>
+        </div> */}
       </div>
     </header>
   );

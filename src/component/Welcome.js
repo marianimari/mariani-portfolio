@@ -6,7 +6,7 @@ import gsap from "gsap";
 const Welcome = () => {
 
   const title = useRef();
-  const title2 = useRef();
+  const square = useRef();
 
 useEffect(() => {
   //timeline
@@ -24,9 +24,9 @@ useEffect(() => {
   );
 
   tl2.from(
-    title2.current, 0.6, {
+    square.current, 0.6, {
       opacity:0,
-      y: 1500,
+      x: 2500,
       ease: 'power6.out',
 
     }
@@ -59,7 +59,7 @@ useEffect(() => {
         </div>
       </div>
 
-      <div className={classes.welcome__square} ref={title2}></div>
+      <div className={classes.welcome__square} ref={square}></div>
     </welcome>
   );
 };

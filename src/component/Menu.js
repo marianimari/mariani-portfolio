@@ -15,7 +15,7 @@ const Menu = () => {
             <li id="contactLink">
               <Link
                 to="contact"
-                activeClass={classes.menu__nav__active}
+                activeClass={classes.active}
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -27,7 +27,7 @@ const Menu = () => {
             <li  id="experimentLink">
               <Link
                 to="experiment"
-                activeClass={classes.menu__nav__active}
+                activeClass={classes.active}
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -39,7 +39,7 @@ const Menu = () => {
             <li  id="workLink">
               <Link
                 to="work"
-                activeClass={classes.menu__nav__active}
+                activeClass={classes.active}
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -51,7 +51,7 @@ const Menu = () => {
             <li id="welcomeLink">
               <Link
                 to="welcome"
-                activeClass={classes.menu__nav__active}
+                activeClass={classes.active}
                 spy={true}
                 smooth={true}
                 offset={-70}
