@@ -21,7 +21,7 @@ export const workData = [
     category: "Course Info & purchase / Java Web",
     slug: "jhia-academy",
     brief:
-      "The website aims to introduce various courses held by the Japan Handicraft Instructors' Association, in the form of knitting, embroidery and quilting. Users can purchase certified courses through this web site. I developed this website with other development teams when I was still working at PT. Global Coding Indonesia.",
+      "The website aims to introduce various courses held by the Japan Handicraft Instructors' Association, such as knitting, embroidery and quilting. Users can purchase certified courses through this web site. I developed this website with other development teams when I was still working at PT. Global Coding Indonesia.",
     role: "Convert design to HTML/CSS(in 2019), manage Front End team (2021)",
     date: "2019-2021",
     stack: "Java, JSF(JavaServer Faces), Primefaces, MySql, HTML, CSS",
@@ -36,7 +36,7 @@ export const workData = [
     category: "Company Profile / Wordpress",
     slug: "fukui-company",
     brief:
-      "This website is a company profile for companies engaged in financial consulting. It helps people with tax law and accounting. I collaborated with a copywriter and UI designer on making this website.",
+      "This is a company profile for Fukui, a company that engaged in financial consulting based in Saga, Japan. It helps people with tax law and accounting. I collaborated with a copywriter and UI designer on making this website.",
     role: "Wordpress theme modification, build page with drag & drop page builder, web optimization, SEO, manage plugin",
     date: "2018",
     stack: "HTML, CSS, Wordpress",
