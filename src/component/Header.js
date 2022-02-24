@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import classes from "./Header.module.scss";
 import { Link } from "react-router-dom";
 
-import { BiMenuAltRight } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
+// import { BiMenuAltRight } from "react-icons/bi";
+// import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

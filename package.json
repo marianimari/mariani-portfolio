@@ -2,7 +2,7 @@
   "name": "mariani-portfolio",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://marianimari.github.io/",
+  "homepage": "https://www.marianiweb.site/",
   "dependencies": {
     "@babel/runtime": "7.0.0-beta.55",
     "@fortawesome/fontawesome-svg-core": "^1.3.0",

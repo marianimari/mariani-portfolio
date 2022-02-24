@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./Menu.module.scss";
 // import { Link } from "react-router-dom";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
-const scrollToTop = () => {
-  scroll.scrollToTop();
-};
+// const scrollToTop = () => {
+//   scroll.scrollToTop();
+// };
 const Menu = () => {
   return (
     <>
