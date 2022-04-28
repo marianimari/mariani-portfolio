@@ -82,7 +82,7 @@ const WorkDetail = (props) => {
         </div>
      
       </workDetail>
-      <MenuWork /> 
+  
     </>
   );
 };
